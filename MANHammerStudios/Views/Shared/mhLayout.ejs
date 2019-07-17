@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+</head>
+
+
+  <body>
+  <div class="bg">
+        <img class="img-responsive" src="../../Content/Images/mhsb2.jpg" id="artBanner" />
+  <header class="clearfix">
+            <div class="container" id="desktopMenu">
+                <div class="header-right">
+                    <label for="open">
+                        <span class="hidden-desktop"></span>
+                    </label>
+                    <input type="checkbox" name="" id="open">
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/AboutMe">About Me</a>
+                        <a href="/Gallery">Gallery</a>
+                        <a href="/Pricing">Pricing Information</a>
+                        <a href="/Contact">Contact</a>
+                        <a href="/Midterm">Design Rationale</a>
+                        <a href="http://www.manhammerstudios.blogspot.com">Blog</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="container col-xs-1" id="mobileMenu">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="mobileNavMenuButton" type="button" data-toggle="dropdown">
+                Navigate:
+                 <span class="caret"></span></button>
+                 <ul class="dropdown-menu">
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/AboutMe">About Me</a></li>
+                   <li><a href="/Gallery">Gallery</a></li>
+                   <li><a href="/Pricing">Pricing Information</a></li>
+                   <li><a href="/Contact">Contact</a></li>
+                   <li><a href="/Midterm">Design Rationale</a></li>
+                   <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
+                 </ul>
+              </div>
+            </div>
+        </header><br/><br/>
+
+        <%- body %>
+        <div class="footer">
+        <header class="clearfix">
+            <div class="container" id="desktopMenu">
+                <div class="row" id="desktopMenuRow">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <h4><a href="/">Home</a></h4>
+                    <h4><a href="/AboutMe">About Me</a></h4>
+                    <h4><a href="/Gallery">Gallery</a></h4>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <h4><a href="/Pricing">Pricing Information</a></h4>
+                    <h4><a href="/Contact">Contact</a></h4>
+                    <h4><a href="http://www.manhammerstudios.blogspot.com">Blog</a></h4>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                   <span>
+                   <p id="footerCR">
+                     Copyright for products being painted belong to their respective owners. Copyright for the work
+                     done on each piece belongs to me, and may not be reposted without my expressed permission.
+                     </p>
+                   </span>
+                  </div>
+                  <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                    <img class="img-responsive" src="../Images/mhlogo.jpg" id="logo" />
+                  </div>
+                </div>
+            </div>
+            <div class="container" id="mobileMenu">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="mobileNavMenuButton" type="button" data-toggle="dropdown">Navigate:
+                 <span class="caret"></span></button>
+                 <ul class="dropdown-menu">
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/AboutMe">About Me</a></li>
+                   <li><a href="/Gallery">Gallery</a></li>
+                   <li><a href="/Pricing">Pricing Information</a></li>
+                   <li><a href="/Contact">Contact</a></li>
+                   <li><a href="/Midterm">Design Rationale</a></li>
+                   <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
+                 </ul>
+              </div>
+            <div class="row">
+             <span>
+               <p id="footerCR">
+               Copyright for products being painted belong to their respective owners. Copyright for the work
+               done on each piece belongs to me, and may not be reposted without my expressed permission.
+               </p>
+             </span>
+          </div>
+        </div>
+        </header>
+
+        </div>
+    
+
+    <script src="/dependencies/sails.io.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/tabControl.js"></script>
+    </div>
+  </body>
+</html>
+
