@@ -18,6 +18,21 @@ namespace MANHammerStudios
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "AboutMe",
+                url: "Home/AboutMe",
+                defaults: new { controller = "Home", action = "AboutMe", id = UrlParameter.Optional }
+                );
+            routes.MapRoute(
+                name: "Contact",
+                url: "Home/Contact",
+                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+                );
+            routes.MapRoute(
+                name: "Pricing",
+                url: "Home/Pricing",
+                defaults: new { controller = "Home", action = "Pricing", id = UrlParameter.Optional }
+                );
         }
     }
 }

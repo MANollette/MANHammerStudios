@@ -13,7 +13,7 @@ namespace MANHammerStudios.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult AboutMe()
         {
             ViewBag.Message = "Your application description page.";
 
@@ -23,6 +23,20 @@ namespace MANHammerStudios.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "Gallery page.";
+
+            return View();
+        }
+
+        public ActionResult Pricing()
+        {
+            ViewBag.Message = "Pricing information.";
 
             return View();
         }

@@ -328,17 +328,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Pages\AboutMe.ejs" />
-    <Content Include="Views\Pages\Contact.ejs" />
-    <Content Include="Views\Pages\Gallery.ejs" />
     <Content Include="Views\Pages\GalleryBack.ejs" />
-    <Content Include="Views\Pages\homepage.ejs" />
-    <Content Include="Views\Pages\Midterm.ejs" />
-    <Content Include="Views\Pages\Pricing.ejs" />
-    <Content Include="Views\Shared\mhLayout.ejs" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -348,6 +339,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Pricing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
