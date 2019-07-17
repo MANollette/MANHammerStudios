@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="~/Scripts/tabControl.js"></script>
+    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
 <body>   
-    <div class="container body-content">
+    <div class="col-xl-1 col-lg-1 col-md-1"></div>
+    <div class="container body-content col-xl-10 col-lg-10 col-md-10">
         <div class="bg">
             <img class="img-responsive" src="../../Content/Images/mhsb2.jpg" id="artBanner" />
             <header class="clearfix">
@@ -40,11 +41,10 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a href="/">Home</a></li>
-                            <li><a href="/AboutMe">About Me</a></li>
-                            <li><a href="/Gallery">Gallery</a></li>
-                            <li><a href="/Pricing">Pricing Information</a></li>
-                            <li><a href="/Contact">Contact</a></li>
-                            <li><a href="/Midterm">Design Rationale</a></li>
+                            <li><a href="/Home/AboutMe">About Me</a></li>
+                            <li><a href="/Home/Gallery">Gallery</a></li>
+                            <li><a href="/Home/Pricing">Pricing Information</a></li>
+                            <li><a href="/Home/Contact">Contact</a></li>
                             <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
                         </ul>
                     </div>
@@ -57,12 +57,12 @@
                         <div class="row" id="desktopMenuRow">
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                                 <h4><a href="/">Home</a></h4>
-                                <h4><a href="/AboutMe">About Me</a></h4>
-                                <h4><a href="/Gallery">Gallery</a></h4>
+                                <h4><a href="/Home/AboutMe">About Me</a></h4>
+                                <h4><a href="/Home/Gallery">Gallery</a></h4>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                                <h4><a href="/Pricing">Pricing Information</a></h4>
-                                <h4><a href="/Contact">Contact</a></h4>
+                                <h4><a href="/Home/Pricing">Pricing Information</a></h4>
+                                <h4><a href="/Home/Contact">Contact</a></h4>
                                 <h4><a href="http://www.manhammerstudios.blogspot.com">Blog</a></h4>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -87,22 +87,12 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/AboutMe">About Me</a></li>
-                                <li><a href="/Gallery">Gallery</a></li>
-                                <li><a href="/Pricing">Pricing Information</a></li>
-                                <li><a href="/Contact">Contact</a></li>
-                                <li><a href="/Midterm">Design Rationale</a></li>
+                                <li><a href="/Home/AboutMe">About Me</a></li>
+                                <li><a href="/Home/Gallery">Gallery</a></li>
+                                <li><a href="/Home/Pricing">Pricing Information</a></li>
+                                <li><a href="/Home/Contact">Contact</a></li>
                                 <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
                             </ul>
-                        </div>
-                        <div class="row">
-                            <p id="footerCR">
-                                <span>
-
-                                    Copyright for products being painted belong to their respective owners. Copyright for the work
-                                    done on each piece belongs to me, and may not be reposted without my expressed permission.
-                                </span>
-                            </p>
                         </div>
                     </div>
                 </header>
