@@ -7,12 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="~/Scripts/tabControl.js"></script>
-    
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
-<body>   
+<body>
     <div class="col-xl-1 col-lg-1 col-md-1"></div>
     <div class="container body-content col-xl-10 col-lg-10 col-md-10">
         <div class="bg">
@@ -34,20 +34,19 @@
                     </div>
                 </div>
                 <div class="container col-xs-1" id="mobileMenu">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" id="mobileNavMenuButton" type="button" data-toggle="dropdown">
-                            Navigate:
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/Home/AboutMe">About Me</a></li>
-                            <li><a href="/Home/Gallery">Gallery</a></li>
-                            <li><a href="/Home/Pricing">Pricing Information</a></li>
-                            <li><a href="/Home/Contact">Contact</a></li>
-                            <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
-                        </ul>
-                    </div>
+                    <ul class="nav" id="mobileNavMenuButton">
+                        <li>
+                            Navigation
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/Home/AboutMe">About Me</a></li>
+                                <li><a href="/Home/Gallery">Gallery</a></li>
+                                <li><a href="/Home/Pricing">Pricing Information</a></li>
+                                <li><a href="/Home/Contact">Contact</a></li>
+                                <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </header><br /><br />
             @RenderBody()
@@ -79,21 +78,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container" id="mobileMenu">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" id="mobileNavMenuButton" type="button" data-toggle="dropdown">
-                                Navigate:
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/Home/AboutMe">About Me</a></li>
-                                <li><a href="/Home/Gallery">Gallery</a></li>
-                                <li><a href="/Home/Pricing">Pricing Information</a></li>
-                                <li><a href="/Home/Contact">Contact</a></li>
-                                <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
-                            </ul>
-                        </div>
+                    <div class="container col-xs-1" id="mobileMenu">
+                        <ul class="nav" id="mobileNavMenuButton">
+                            <li>
+                                Navigation
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/Home/AboutMe">About Me</a></li>
+                                    <li><a href="/Home/Gallery">Gallery</a></li>
+                                    <li><a href="/Home/Pricing">Pricing Information</a></li>
+                                    <li><a href="/Home/Contact">Contact</a></li>
+                                    <li><a href="http://www.manhammerstudios.blogspot.com">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </header>
             </div>

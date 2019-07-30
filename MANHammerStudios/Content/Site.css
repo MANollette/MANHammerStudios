@@ -76,9 +76,25 @@ table {
     display: none;
     padding-left: 0;
 }
+UL.nav > LI {
+    list-style: none;
+    float: left;
+    border: 1px solid red;
+    position: relative;
+    height: 24px; /* height included for IE 7 */
+}
 
+UL.nav UL {
+    left: -10000px;
+    position: absolute;
+}
+
+UL.nav > LI:hover UL {
+    left: 0;
+    top: 24px; /* IE7 has problems without this */
+}
 #mobileNavMenuButton {
-    background-image: url("../Images/aquila.jpg");
+    background-color: black;
     background-size: cover;
     color: crimson;
     font-size: 1.5em;
@@ -284,6 +300,9 @@ table {
 }
 /*#endregion carouselStyles*/
 /*#region columnStyles*/
+#column{
+    padding-right:20px;
+}
 #contactCol {
     background-image: none;
     background-color: black;
@@ -361,6 +380,9 @@ input[type=text] {
 
 li {
     font-size: small;
+    list-style-type: none;
+    padding: 0 32px;
+    border: 1px solid white;
 }
 
 nav > a {
@@ -388,6 +410,10 @@ p {
 
 ul {
     font-size: small;
+    display: inline-block;
+    padding: 0;
+    background-color: black;
+    color: white;
 }
 /*#endregion coreElementStyles*/
 /*#region divContentsStyles*/
@@ -419,6 +445,10 @@ ul {
 #galleryContainer {
     background-image: none;
     background-color: black;
+}
+
+#mobileNavDiv{
+    background-color:black;
 }
 
 #priceSheet {
@@ -524,6 +554,14 @@ ul {
         padding-top: 10px;
     }
 
+    #admechTestimonial {
+        font-size: .8em;
+    }
+
+    #xwingTestimonial {
+        font-size: 1em;
+    }
+
     #contactLabel {
         width: 100%;
     }
@@ -545,6 +583,8 @@ ul {
 
     #mobileMenu {
         display: block;
+        z-index:2;
+        position:relative;
     }
 
     #rightCol {
@@ -576,6 +616,18 @@ ul {
     #smCarousele {
         max-width: 90%;
     }
+    ul {
+        display: inline-block;
+        padding: 0;
+        background-color: black;
+        color: white;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 0 32px;
+        border: 1px solid white;
+    }
 }
 
 /*Small devices (tablets, 768px and up) */
@@ -602,6 +654,14 @@ ul {
     .box {
         width: 49%;
         margin-bottom: 5%;
+    }
+
+    #admechTestimonial {
+        font-size: .4em;
+    }
+
+    #xwingTestimonial {
+        font-size: .5em;
     }
 
     #leftCol {
