@@ -267,7 +267,9 @@
     <Content Include="Content\Images\XWing\xw4.jpg" />
     <Content Include="Content\Images\XWing\xw5.jpg" />
     <Content Include="Content\Images\XWing\xwTestBG.jpg" />
+    <Content Include="Content\Styles\counters.css" />
     <Content Include="Content\Styles\styles.css" />
+    <Content Include="Scripts\counterControl.js" />
     <Content Include="Scripts\tabControl.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -299,6 +301,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Content\Images\.gitkeep" />
     <Content Include="Content\Styles\styles.less" />
+    <None Include="Properties\PublishProfiles\MANHammerStudios - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

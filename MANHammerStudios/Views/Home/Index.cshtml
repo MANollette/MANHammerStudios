@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<link href="~/Content/Styles/counters.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/counterControl.js" type="text/javascript"></script>
 <div class="container-fluid">
     <div class="row">
         <div class="hidden-xs col-sm-4 col-md-4 col-lg-4" id="leftCol">
@@ -115,19 +116,27 @@
         </div>
         <!--End column-->
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="rightCol">
-            <h3>Recent Blog Posts</h3>
-            <div class="container-fluid">
-                <iframe id="blogPrev" src="http://manhammerstudios.blogspot.com/2018/09/miscellaneous-painted-stuff.html"></iframe>
+            <div class="wrapper row">
+                <div class="counter col_fourth">
+                    <i class="fa fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="640" data-speed="1500"></h2>
+                    <p class="count-text ">Models Assembled</p>
+                </div>
             </div>
-            <br />
-            <div class="container-fluid">
-                <iframe id="blogPrev" src="http://manhammerstudios.blogspot.com/2017/10/imperial-knight-house-taranis.html"></iframe>
+            <div class="wrapper row">
+                <div class="counter col_fourth">
+                    <i class="fa fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="357" data-speed="1500"></h2>
+                    <p class="count-text ">Models Painted</p>
+                </div>
             </div>
-            <br />
-            <div class="container-fluid">
-                <iframe id="blogPrev" src="http://manhammerstudios.blogspot.com/2017/09/admech-commission.html"></iframe>
+            <div class="wrapper row">
+                <div class="counter col_fourth">
+                    <i class="fa fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="11" data-speed="1500"></h2>
+                    <p class="count-text ">Satisfied Customers</p>
+                </div>
             </div>
-            <br />
         </div>
         <!--End column-->
     </div>
