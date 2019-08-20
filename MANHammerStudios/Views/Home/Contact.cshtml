@@ -3,6 +3,28 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    #name, #email, #message, #subject {
+        color: black;
+    }
+</style>
+<script src="https://smtpjs.com/v3/smtp.js">
+    function sendEmail() {
+        Email.send({
+            Host: "https://www.gmail.com",
+            Username: "MANHammerStudios@gmail.com",
+            Password: "hegemon18",
+            To: 'MANHammerStudios@gmail.com',
+            From: document.getElementById('email'),
+            Subject: document.getElementById('subject'),
+            Body: document.getElementById('message')
+        }).then(
+            message => alert(message)
+        );
+    }
+</script>
+
+<script src="~/Scripts/contactForm.js" type="text/javascript"></script>
 
 <div class="container-fluid">
     <form action="https://formspree.io/MANHammerStudios@gmail.com" method="POST" id="contactCol">
@@ -11,7 +33,6 @@
                 <label id="contactLabela" for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" />
                 <br />
-
                 <label id="contactLabel" for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Your email address" />
                 <br />
@@ -24,7 +45,7 @@
                 <br />
                 <textarea id="message" name="message" placeholder="What would you like to know?"></textarea>
                 <br />
-                <input type="submit" id="submit" value="Submit" />
+                <input type="submit" id="submit" value="Submit" onclick="sendEmail()" />
             </div><!--End column-->
         </div><!--End row-->
     </form><!--End form-->
