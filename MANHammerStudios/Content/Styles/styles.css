@@ -63,9 +63,18 @@ table {
 
 /*#endregion resetCSS*/
 
-#homeHead
-{
+#artBanner{
+    width:87%;
+    max-height:100px;
+}
+
+#homeBanner{
+    width:102%;
+}
+
+#homeHead {
     font-size: 1.5em;
+    text-shadow: 0 0 3px #FF0000;
 }
 
 .carousel-caption{
@@ -73,12 +82,128 @@ table {
     width: 98%;
     left:0;
 }
+
+/*#region modalControls*/
+.mh-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4)
+}
+
+.mh-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.mh-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .mh-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.3
+    }
+
+.mh-dropdown-hover:hover > .mh-button:first-child, .mh-dropdown-click:hover > .mh-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.mh-bar-block .mh-dropdown-hover .mh-button, .mh-bar-block .mh-dropdown-click .mh-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.mh-bar .mh-button {
+    white-space: normal
+}
+
+.mh-dropdown-hover.mh-mobile .mh-button, .mh-dropdown-click.mh-mobile .mh-button {
+    width: 100%
+}
+
+.mh-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.mh-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.mh-xlarge {
+    font-size: 24px !important
+}
+
+.mh-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.mh-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+.mh-container:after, .mh-container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+/*#endregion*/
 /*#region mediaQueries*/
 
 /* Smallest devices (phones, under 768px) */
 @media screen and (max-width: 767px) {
-    .carousel-caption{
-        font-size:22px;
+    .carousel-caption {
+        font-size: 22px;
+    }
+
+    .mh-modal-content {
+        margin: 0 10px;
+        width: auto !important;
+    }
+    .mh-modal {
+        padding-top: 30px
     }
 }
 
@@ -100,6 +225,17 @@ table {
 @media screen and (min-width: 992px) {
     .carousel-caption{
         font-size: 1.05em;
+    }
+    .mh-modal-content {
+        width: 900px
+    }
+
+    .mh-hide-large {
+        display: none !important
+    }
+
+    .mh-sidebar.mh-collapse {
+        display: block !important
     }
 }
 

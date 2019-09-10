@@ -270,6 +270,7 @@
     <Content Include="Content\Styles\counters.css" />
     <Content Include="Content\Styles\styles.css" />
     <Content Include="Scripts\counterControl.js" />
+    <Content Include="Scripts\ModalControl.js" />
     <Content Include="Scripts\tabControl.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

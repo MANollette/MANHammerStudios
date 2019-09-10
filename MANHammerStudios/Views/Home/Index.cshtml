@@ -3,6 +3,7 @@
 }
 <link href="~/Content/Styles/counters.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/Styles/styles.css" rel="stylesheet" type="text/css" />
+
 <script src="~/Scripts/counterControl.js" type="text/javascript"></script>
 <div class="container-fluid">
     <div class="row">
@@ -17,27 +18,34 @@
                 painting is our specialty.<br /><br />
             </p>
             <h3 id="homeHead">Featured Work</h3>
-            <figure class="figure">
-                <img class="img-responsive" id="FreebladeEx" src="../../content/images/Knights/Freeblade1.jpg" alt="Freeblade" />
-                <figcaption class="figure-caption" id="homeCap">Freeblade Knight</figcaption>
-            </figure>
-            <div id="freebladeModal" class="modal">
-                <span class="close">&times</span>
-                <img class="modal-content img-responsive" id="freeblade01" />
-                <div id="caption"></div>
+            <!-- <img class="img-responsive" id="FreebladeEx" src="../../content/images/Knights/Freeblade1.jpg" alt="Freeblade" />-->
+
+            <div class="mh-container">
+                <h2>Freeblade Knight</h2>
+                <img src="../../content/images/Knights/Freeblade1.jpg" style="width:50%;cursor:zoom-in"
+                     onclick="document.getElementById('exModal01').style.display='block'">
+
+                <div id="exModal01" class="mh-modal" onclick="this.style.display='none'">
+                    <span class="mh-button mh-hover-red mh-xlarge mh-display-topright">&times;</span>
+                    <div class="mh-modal-content mh-animate-zoom">
+                        <img src="../../content/images/Knights/Freeblade1.jpg" style="width:100%">
+                    </div>
+                </div>
             </div>
-            <!--End modal-->
+
             <br /><br />
-            <figure class="figure">
-                <img class="img-responsive" id="FlamerEx" src="../../content/images/HeresySalamanders/HeavyFlamers4.jpg" alt="Flamer" />
-                <figcaption class="figure-caption" id="homeCap">Salamanders Heavy Flamer</figcaption><br />
-            </figure>
-            <div id="flamerModal" class="modal">
-                <span class="close">&times</span>
-                <img class="modal-content img-responsive" id="flamer01" />
-                <div id="fcaption"></div>
-            </div>
-            <!--End modal-->
+            <div class="mh-container">
+                <h2>Salamanders Heavy Flamer</h2>
+                <img src="../../content/images/HeresySalamanders/HeavyFlamers4.jpg" style="width:50%;cursor:zoom-in"
+                     onclick="document.getElementById('exModal02').style.display='block'">
+
+                <div id="exModal02" class="mh-modal" onclick="this.style.display='none'">
+                    <span class="mh-button mh-hover-red mh-xlarge mh-display-topright">&times;</span>
+                    <div class="mh-modal-content mh-animate-zoom">
+                        <img src="../../content/images/HeresySalamanders/HeavyFlamers4.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>          
             <br />
         </div>
         <!--End column-->
@@ -55,6 +63,7 @@
         <!--End column-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="midCol">
             <img class="img-responsive" src="../../content/Images/mhsBanner.jpg" id="homeBanner" />
+            <br />
             <br />
             <h3 id="homeHead">Testimonials</h3>
             <br />
