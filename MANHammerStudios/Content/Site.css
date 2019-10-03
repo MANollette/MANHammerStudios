@@ -68,11 +68,11 @@ table {
 }
 /*#endregion backgroundStyles*/
 /*#region buttonNavStyles*/
-#desktopMenu {
+.desktopMenu {
     display: block;
 }
 
-#mobileMenu {
+.mobileMenu {
     display: none;
     padding-left: 0;
 }
@@ -93,7 +93,7 @@ UL.nav > LI:hover UL {
     left: 0;
     top: 24px; /* IE7 has problems without this */
 }
-#mobileNavMenuButton {
+.mobileNavMenuButton {
     background-color: black;
     background-size: cover;
     color: crimson;
@@ -212,7 +212,7 @@ UL.nav > LI:hover UL {
     font-family: "Montserrat", sans-serif;
 }
 
-#aboutHead {
+.aboutHead {
     padding-top: 20px;
     color: black;
 }
@@ -222,21 +222,25 @@ UL.nav > LI:hover UL {
     padding-top: 5px;
 }
 
-#galHead {
+.galHead {
     font-size: 1.5em;
     margin: 15px;
     color: white;
     text-shadow: 1px 1px #bb1e14;
 }
 
-#galHead2 {
+.galHead2 {
     font-size: 2em;
     margin: 15px;
     color: white;
     text-shadow: 1px 1px #bb1e14;
 }
 
-#homeCap, #homeHead {
+#homeCap {
+    text-shadow: 1px 1px #bb1e14;
+    margin-bottom: 10px;
+}
+.homeHead {
     text-shadow: 1px 1px #bb1e14;
     margin-bottom: 10px;
 }
@@ -254,7 +258,11 @@ UL.nav > LI:hover UL {
     font-size:.9em;
 }
 
-#smCarousel {
+.smCarousel {
+    max-height: 700px;
+}
+
+#smCarousel0 {
     max-height: 700px;
 }
 
@@ -282,7 +290,7 @@ UL.nav > LI:hover UL {
     font-size:1.1em;
 }
 
-#testCarBG {
+.testCarBG {
     width: 100%;
     height: 100%;
     vertical-align: central;
@@ -308,21 +316,142 @@ UL.nav > LI:hover UL {
     background-color: black;
 }
 
-#leftCol {
+.leftCol {
     background: rgba(0,0,0,.6);
     color: white;
 }
 
-#midCol {
+.midCol {
     background: rgba(0,0,0,.6);
     color: white;
 }
 
-#rightCol {
+.rightCol {
     background: rgba(0,0,0,.6);
     color: white;
 }
 /*#endregion columnStyles*/
+/*#region contactStyles*/
+#name, #email, #message, #submit, #subject {
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#contactContainer {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+    #contact h3 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    #contact h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+#contactHead {
+    color: darkblue;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact input[type="tel"]:hover,
+    #contact input[type="url"]:hover,
+    #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #aaa;
+    }
+
+#contact textarea {
+    height: 250px;
+    max-width: 100%;
+    resize: none;
+    color: black;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    #contact button[type="submit"]:hover {
+        background: #43A047;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+/*#endregion*/
 /*#region coreElementStyles*/
 
 a {
@@ -458,7 +587,7 @@ ul {
     margin-bottom: 20px;
 }
 
-#testItem {
+.testItem {
     background: #333;
     text-align: center;
     height: 500px;
@@ -469,7 +598,7 @@ ul {
     width: 85%;
 }
 
-#aboutMeEx {
+.aboutMeEx {
     max-width: 600px;
     max-height: 650px;
     border: 1px solid #000000;
@@ -542,13 +671,13 @@ ul {
         display: block;
     }
 
-    #aboutP {
+    .aboutP {
         padding-bottom: 10px;
         font-size: 1em;
         padding-top: 10px;
     }
 
-    #aboutPF {
+    .aboutPF {
         padding-bottom: 150px;
         font-size: 1em;
         padding-top: 10px;
@@ -566,34 +695,38 @@ ul {
         width: 100%;
     }
 
-    #desktopMenu {
+    .desktopMenu {
         display: none;
     }
 
-    #leftCol {
+    .leftCol {
         min-height: 300px;
         margin-right: 5%;
         color: white;
     }
 
-    #midCol {
+    .midCol {
         min-height: 300px;
         color: white;
     }
 
-    #mobileMenu {
+    .mobileMenu {
         display: block;
         z-index:2;
         position:relative;
     }
 
-    #rightCol {
+    .rightCol {
         min-height: 300px;
         margin-left: 5%;
         color: white;
     }
 
-    #smCarousel {
+    .smCarousel {
+        max-width: 90%;
+    }
+
+    #smCarousel0 {
         max-width: 90%;
     }
 
@@ -664,24 +797,28 @@ ul {
         font-size: .5em;
     }
 
-    #leftCol {
+    .leftCol {
         min-height: 600px;
         margin-right: 5%;
         color: white;
     }
 
-    #midCol {
+    .midCol {
         min-height: 600px;
         color: white;
     }
 
-    #rightCol {
+    .rightCol {
         min-height: 600px;
         margin-left: 5%;
         color: white;
     }
 
-    #smCarousel {
+    .smCarousel { 
+        max-width: 85%;
+    }
+
+    #smCarousel0 {
         max-width: 85%;
     }
 
@@ -732,35 +869,39 @@ ul {
         margin-bottom: 5%;
     }
 
-    #aboutP {
+    .aboutP {
         max-width: 70%;
         color: white;
         background: rgba(0,0,0,.6);
     }
 
-    #aboutPF {
+    .aboutPF {
         padding-bottom: 150px;
         padding-top: 10px;
     }
 
-    #leftCol {
+    .leftCol {
         min-height: 600px;
         margin-right: 5%;
         color: white;
     }
 
-    #midCol {
+    .midCol {
         min-height: 600px;
         color: white;
     }
 
-    #rightCol {
+    .rightCol {
         min-height: 600px;
         margin-left: 5%;
         color: white;
     }
 
-    #smCarousel {
+    .smCarousel {
+        max-width: 85%;
+    }
+
+    #smCarousel0 {
         max-width: 85%;
     }
 
@@ -793,17 +934,17 @@ ul {
         color: white;
     }
 
-    #aboutP {
+    .aboutP {
         max-width: 65%;
     }
 
-    #aboutPF {
+    .aboutPF {
         max-width: 65%;
         padding-bottom: 150px;
         padding-top: 10px;
     }
 
-    #leftCol {
+    .leftCol {
         min-height: 600px;
         max-width: 30%;
         margin-right: 5%;
@@ -812,7 +953,7 @@ ul {
         padding-bottom: 60px;
     }
 
-    #midCol {
+    .midCol {
         min-height: 600px;
         max-width: 30%;
         color: white;
@@ -820,7 +961,7 @@ ul {
         padding-bottom: 60px;
     }
 
-    #rightCol {
+    .rightCol {
         min-height: 600px;
         max-width: 30%;
         margin-left: 5%;
@@ -830,7 +971,12 @@ ul {
         padding-bottom: 60px;
     }
 
-    #smCarousel {
+    .smCarousel {
+        max-width: 75%;
+        width: inherit;
+    }
+
+    #smCarousel0 {
         max-width: 75%;
         width: inherit;
     }
@@ -872,11 +1018,11 @@ ul {
         margin-right: 22%;
     }
 
-    #aboutP {
+    .aboutP {
         max-width: 65%;
     }
 
-    #aboutPF {
+    .aboutPF {
         padding-bottom: 150px;
         padding-top: 10px;
         max-width: 65%;
@@ -898,7 +1044,7 @@ ul {
         text-align: center;
     }
 
-    #leftCol {
+    .leftCol {
         max-width: 30%;
         margin-right: 5%;
         color: white;
@@ -906,7 +1052,7 @@ ul {
         padding-bottom: 60px;
     }
 
-    #midCol {
+    .midCol {
         min-height: 600px;
         max-width: 30%;
         color: white;
@@ -914,7 +1060,7 @@ ul {
         padding-bottom: 60px;
     }
 
-    #rightCol {
+    .rightCol {
         min-height: 600px;
         max-width: 30%;
         margin-left: 5%;
@@ -923,7 +1069,12 @@ ul {
         padding-bottom: 60px;
     }
 
-    #smCarousel {
+    .smCarousel {
+        max-width: 80%;
+        width: inherit;
+    }
+
+    #smCarousel0 {
         max-width: 80%;
         width: inherit;
     }
@@ -960,7 +1111,7 @@ ul {
 }
 /*#endregion spaceDivStyles*/
 /*#region textStyles*/
-#aboutP {
+.aboutP {
     padding-bottom: 10px;
     font-size: 1.2em;
     padding-top: 10px;
@@ -968,7 +1119,7 @@ ul {
     color: white;
 }
 
-#aboutPa {
+.aboutPa {
     font-size: 1.5em;
     margin-top: 80px;
     width: 80%;
@@ -976,7 +1127,7 @@ ul {
     background: rgba(0,0,0,.6);
 }
 
-#aboutPF {
+.aboutPF {
     padding-bottom: 150px;
     font-size: 1.2em;
     padding-top: 10px;
@@ -984,7 +1135,7 @@ ul {
     color: white;
 }
 
-#aboutUs {
+.aboutUs {
     padding-right: 10px;
 }
 

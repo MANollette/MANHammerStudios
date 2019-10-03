@@ -64,7 +64,6 @@ table {
 /*#endregion resetCSS*/
 
 #artBanner{
-    width:87%;
     max-height:100px;
 }
 
@@ -72,7 +71,7 @@ table {
     width:102%;
 }
 
-#homeHead {
+.homeHead {
     font-size: 1.5em;
     text-shadow: 0 0 3px #FF0000;
 }
@@ -118,7 +117,7 @@ table {
     background-color: inherit;
     text-align: center;
     cursor: pointer;
-    white-space: nowrap;
+    white-space: no;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -179,6 +178,7 @@ table {
     display: table;
     clear: both
 }
+
 
 @keyframes animatezoom {
     from {

@@ -4,23 +4,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/Content/Styles/styles.css" rel="stylesheet" type="text/css" />
+<style>
+    .bg {
+        background-image: none;
+        background-color: black;
+    }
+</style>
 
-<div class="container-fluid" id="galleryContainer">
-    <p>
-        <h4 id="galHead2">Gallery</h4>
-    </p>
+<div class="container-fluid" id="galleryContainer">  
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">Adeptus Mechanicus</h4>
-            <div id="smCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Indicators
-                <ol class="carousel-indicators">
-                  <li data-target="#smCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#smCarousel" data-slide-to="1"></li>
-                  <li data-target="#smCarousel" data-slide-to="2"></li>
-                </ol>-->
+            <h4 class="galHead2">Gallery</h4>
+            <h4 class="galHead">Adeptus Mechanicus</h4>
+            <div id="smCarousel0" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/AdMech/AdMechLot1.jpg" alt="1" />
                     </div>
@@ -63,11 +61,11 @@
                 </div>
                 <!--End inner carousel-->
                 <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarousel" data-slide="prev">
+                <a class="left carousel-control" href="#smCarousel0" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#smCarousel" data-slide="next">
+                <a class="right carousel-control" href="#smCarousel0" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -79,11 +77,11 @@
     <!--End row-->
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">Alpha Legion</h4>
+            <h4 class="galHead">Alpha Legion</h4>
             <div id="smCarousela" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Indicators -->
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/HeresyAlphaLegion/ALLot2.jpg" alt="1" />
                     </div>
@@ -172,10 +170,10 @@
     <!--End row-->
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">Dark Souls</h4>
+            <h4 class="galHead">Dark Souls</h4>
             <div id="smCarouselb" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/DarkSouls/ds1.jpg" alt="1" />
                     </div>
@@ -207,10 +205,10 @@
     <!--End row-->
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">Knights</h4>
+            <h4 class="galHead">Knights</h4>
             <div id="smCarouselc" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/Knights/Freeblade1.jpg" alt="1" />
                     </div>
@@ -260,10 +258,10 @@
     <!--End row-->
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">Kingdom Death</h4>
+            <h4 class="galHead">Kingdom Death</h4>
             <div id="smCarouseld" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/KingdomDeath/WhiteLion_1.jpg" alt="1" />
                     </div>
@@ -289,10 +287,10 @@
     <!--End row-->
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 id="galHead">X-Wing</h4>
+            <h4 class="galHead">X-Wing</h4>
             <div id="smCarousele" class="carousel slide" data-interval="false" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="smCarousel">
+                <div class="carousel-inner smCarousel">
                     <div class="item active">
                         <img src="../../content/Images/XWing/xw1.jpg" alt="1" />
                     </div>
@@ -325,6 +323,6 @@
         <!--End column-->
     </div>
     <!--End row-->
-    <div class="container" id="galDivFin" />
+    <div class="container" id="galDivFin"></div>
 </div>
 <!--End container-->

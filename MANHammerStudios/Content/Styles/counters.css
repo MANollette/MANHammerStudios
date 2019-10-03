@@ -36,7 +36,6 @@
     position: relative;
     display: inline;
     display: inline-block;
-    float: left;
     margin-bottom:130px;
     font-family: Arial;
     padding: 25px;
@@ -53,6 +52,7 @@
 .wrapper {
     width: 980px;
     margin: 30px auto;
+    padding-left:100px;
     position: relative;
 }
 
