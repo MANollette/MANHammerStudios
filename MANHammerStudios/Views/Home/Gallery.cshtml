@@ -4,325 +4,1084 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/Content/Styles/styles.css" rel="stylesheet" type="text/css" />
-<style>
-    .bg {
-        background-image: none;
-        background-color: black;
-    }
-</style>
+<link href="~/Content/Styles/galleryStyle.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/ModalScript.js"></script>
 
-<div class="container-fluid" id="galleryContainer">  
+<div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead2">Gallery</h4>
-            <h4 class="galHead">Adeptus Mechanicus</h4>
-            <div id="smCarousel0" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/AdMech/AdMechLot1.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Dragoon.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/ElectroPriests.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Infiltrators.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Kastellan.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Kataphron1.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Kataphron2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/MagosNDatasmith.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Onager.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Onager2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/Ruststalkers.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/SkitariiRangers.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/AdMech/SkitariiVanguard.jpg" alt="3" />
+        <!--#region Admech modal controls-->
+        <div class="column">
+            <div id="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/AdMech/Dragoon.jpg" alt="AdMech1" class="hover-shadow">
+                    <div onclick="openModal('adMechModal');currentSlide(1, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="image-caption">
+                        <h1>Adeptus Mechanicus</h1>
                     </div>
                 </div>
-                <!--End inner carousel-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarousel0" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarousel0" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
-    </div>
-    <!--End row-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead">Alpha Legion</h4>
-            <div id="smCarousela" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/HeresyAlphaLegion/ALLot2.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Apothecary.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Apothecary2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Apothecary3.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Apothecary4.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Cataphractii.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Contemptor2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Fellblade2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Fellblade3.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Fellblade4.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/HeavySupport2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/LaserDestroyer2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Lieutenant.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Praetors.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Sergeant.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/SupportSquad.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/SupportSquad2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/SupportSquad3.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/SupportSquad4.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/Tacticals.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/TacticalSquad.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/TacticalSquad2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/HeresyAlphaLegion/TacticalSquad3.jpg" alt="3" />
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/AdMechLot1.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(2, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/ElectroPriests.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(3, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Infiltrators.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(4, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Kastellan.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(5, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Kataphron1.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(6, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Kataphron2.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(7, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/MagosNDatasmith.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(8, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Onager.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(9, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Onager2.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(10, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/Ruststalkers.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(11, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/SkitariiRangers.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(12, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/AdMech/SkitariiVanguard.jpg" alt="AdMech1" onclick="openModal('adMechModal');currentSlide(13, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region KDM modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/KingdomDeath/Gorm.jpg" alt="Gorm" class="hover-shadow">
+                    <div onclick="openModal('KDMModal');currentSlide(1, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" class="image-caption">
+                        <h1>Kingdom Death</h1>
                     </div>
                 </div>
-                <!--End carousel-inner-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarousela" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarousela" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
-    </div>
-    <!--End row-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead">Dark Souls</h4>
-            <div id="smCarouselb" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/DarkSouls/ds1.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/DarkSouls/ds2.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/DarkSouls/ds3.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/DarkSouls/ds4.jpg" alt="3" />
+        <div class="column colHidden">
+            <img src="../../content/Images/KingdomDeath/Manhunter.jpg" alt="Manhunter" onclick="openModal('KDMModal');currentSlide(2, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/KingdomDeath/WhiteLion_1.jpg" alt="White Lion 1" onclick="openModal('KDMModal');currentSlide(3, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/KingdomDeath/WhiteLion_2.jpg" alt="White Lion 2" onclick="openModal('KDMModal');currentSlide(4, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region Knight modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/Knights/Freeblade1.jpg" alt="Freeblade" class="hover-shadow">
+                    <div onclick="openModal('KnightModal');currentSlide(1, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="image-caption">
+                        <h1>Imperial Knights</h1>
                     </div>
                 </div>
-                <!--End carousel-inner-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarouselb" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarouselb" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
-    </div>
-    <!--End row-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead">Knights</h4>
-            <div id="smCarouselc" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/Knights/Freeblade1.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade2.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade3.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade4.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade5.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade6.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Freeblade7.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Taranis1.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Taranis2.jpg" alt="3" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/Knights/Taranis3.jpg" alt="2" />
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade2.jpg" alt="Freeblade2" onclick="openModal('KnightModal');currentSlide(2, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade3.jpg" alt="Freeblade3" onclick="openModal('KnightModal');currentSlide(3, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade4.jpg" alt="Freeblade4" onclick="openModal('KnightModal');currentSlide(4, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade5.jpg" alt="Freeblade5" onclick="openModal('KnightModal');currentSlide(5, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade6.jpg" alt="Freeblade6" onclick="openModal('KnightModal');currentSlide(6, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Freeblade7.jpg" alt="Freeblade7" onclick="openModal('KnightModal');currentSlide(7, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Taranis1.jpg" alt="Taranis1" onclick="openModal('KnightModal');currentSlide(8, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Taranis1.jpg" alt="Taranis2" onclick="openModal('KnightModal');currentSlide(9, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/Knights/Taranis1.jpg" alt="Taranis3" onclick="openModal('KnightModal');currentSlide(10, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region Space Marine modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/SpaceMarines/SMLot1.jpg" alt="Space Marine Army" class="hover-shadow">
+                    <div onclick="openModal('SMModal');currentSlide(1, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="image-caption">
+                        <h1>Space Marines</h1>
                     </div>
                 </div>
-                <!--End carousel-inner-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarouselc" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarouselc" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
-    </div>
-    <!--End row-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead">Kingdom Death</h4>
-            <div id="smCarouseld" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/KingdomDeath/WhiteLion_1.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/KingdomDeath/WhiteLion_2.jpg" alt="2" />
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Captain.jpg" alt="Captain" onclick="openModal('SMModal');currentSlide(2, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Captains.jpg" alt="Captains" onclick="openModal('SMModal');currentSlide(3, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Captains2.jpg" alt="Captains" onclick="openModal('SMModal');currentSlide(4, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Centurions.jpg" alt="Centurions" onclick="openModal('SMModal');currentSlide(5, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Centurions2.jpg" alt="Centurions" onclick="openModal('SMModal');currentSlide(6, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Dreadnoughts.jpg" alt="Dreadnoughts" onclick="openModal('SMModal');currentSlide(7, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Ramirez.jpg" alt="Ramirez" onclick="openModal('SMModal');currentSlide(8, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Ramirez2.jpg" alt="Ramirez" onclick="openModal('SMModal');currentSlide(9, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Ramirez3.jpg" alt="Ramirez" onclick="openModal('SMModal');currentSlide(10, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Sergeants.jpg" alt="Sergeants" onclick="openModal('SMModal');currentSlide(11, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Techs.jpg" alt="Techs" onclick="openModal('SMModal');currentSlide(12, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/Terminators.jpg" alt="Terminators" onclick="openModal('SMModal');currentSlide(13, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/TerminatorSgts.jpg" alt="Terminator Sergeants" onclick="openModal('SMModal');currentSlide(14, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/SpaceMarines/VanguardSgt.jpg" alt="Vanguard Sergeant" onclick="openModal('SMModal');currentSlide(15, 'GalSMSlides', 'SMThumb', 'SMCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region X-Wing modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/XWing/xw1.jpg" alt="X-Wing 1" class="hover-shadow">
+                    <div onclick="openModal('XWModal');currentSlide(1, 'GalXWSlides', 'XWThumb', 'XWCaption')" class="image-caption">
+                        <h1>X-Wing</h1>
                     </div>
                 </div>
-                <!--End carousel-inner-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarouseld" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarouseld" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
-    </div>
-    <!--End row-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <h4 class="galHead">X-Wing</h4>
-            <div id="smCarousele" class="carousel slide" data-interval="false" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner smCarousel">
-                    <div class="item active">
-                        <img src="../../content/Images/XWing/xw1.jpg" alt="1" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/XWing/xw2.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/XWing/xw3.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/XWing/xw4.jpg" alt="2" />
-                    </div>
-                    <div class="item">
-                        <img src="../../content/Images/XWing/xw5.jpg" alt="2" />
+        <div class="column colHidden">
+            <img src="../../content/Images/XWing/xw2.jpg" alt="X-Wing 2" onclick="openModal('XWModal');currentSlide(2, 'GalXWSlides', 'XWThumb', 'XWCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/XWing/xw3.jpg" alt="X-Wing 3" onclick="openModal('XWModal');currentSlide(3, 'GalXWSlides', 'XWThumb', 'XWCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/XWing/xw4.jpg" alt="X-Wing 4" onclick="openModal('XWModal');currentSlide(4, 'GalXWSlides', 'XWThumb', 'XWCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/XWing/xw5.jpg" alt="X-Wing 5" onclick="openModal('XWModal');currentSlide(5, 'GalXWSlides', 'XWThumb', 'XWCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region dark souls modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/DarkSouls/ds1.jpg" alt="Dark Souls 1" class="hover-shadow">
+                    <div onclick="openModal('darkSoulsModal');currentSlide(1, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" class="image-caption">
+                        <h1>Dark Souls</h1>
                     </div>
                 </div>
-                <!--End carousel-inner-->
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#smCarousele" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#smCarousele" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <!--End carousel-->
         </div>
-        <!--End column-->
+        <div class="column colHidden">
+            <img src="../../content/Images/DarkSouls/ds2.jpg" alt="Dark Souls 2" onclick="openModal('darkSoulsModal');currentSlide(2, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/DarkSouls/ds3.jpg" alt="Dark Souls 3" onclick="openModal('darkSoulsModal');currentSlide(3, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/DarkSouls/ds4.jpg" alt="Dark Souls 4" onclick="openModal('darkSoulsModal');currentSlide(4, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region AL modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/HeresyAlphaLegion/ALLot1.jpg" alt="Alpha Legion 1" class="hover-shadow">
+                    <div onclick="openModal('ALModal');currentSlide(1, 'GalALSlides', 'ALThumb', 'ALCaption')" class="image-caption">
+                        <h1>Alpha Legion</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/ALLot2.jpg" alt="Alpha Legion 2" onclick="openModal('ALModal');currentSlide(2, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Apothecary.jpg" alt="Apothecary" onclick="openModal('ALModal');currentSlide(3, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Apothecary2.jpg" alt="Apothecary 2" onclick="openModal('ALModal');currentSlide(4, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Apothecary3.jpg" alt="Apothecary 3" onclick="openModal('ALModal');currentSlide(5, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Cataphractii.jpg" alt="Cataphractii" onclick="openModal('ALModal');currentSlide(6, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Contemptor.jpg" alt="Contemptor" onclick="openModal('ALModal');currentSlide(7, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Fellblade.jpg" alt="Fellblade" onclick="openModal('ALModal');currentSlide(8, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Fellblade2.jpg" alt="Fellblade 2" onclick="openModal('ALModal');currentSlide(9, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/HeavySupport.jpg" alt="Heavy Support" onclick="openModal('ALModal');currentSlide(10, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/LaserDestroyer.jpg" alt="Laser Destroyer" onclick="openModal('ALModal');currentSlide(11, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Lieutenant.jpg" alt="Lieutenant" onclick="openModal('ALModal');currentSlide(12, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Praetors.jpg" alt="Praetors" onclick="openModal('ALModal');currentSlide(13, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Sergeant.jpg" alt="Sergeant" onclick="openModal('ALModal');currentSlide(14, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/SupportSquad.jpg" alt="Support Squad" onclick="openModal('ALModal');currentSlide(15, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/SupportSquad2.jpg" alt="Support Squad 2" onclick="openModal('ALModal');currentSlide(16, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/Tacticals.jpg" alt="Tactical Squad" onclick="openModal('ALModal');currentSlide(17, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresyAlphaLegion/TacticalSquad.jpg" alt="Tactical Squad 2" onclick="openModal('ALModal');currentSlide(18, 'GalALSlides', 'ALThumb', 'ALCaption')" class="hover-shadow">
+        </div>
+        <!--#endregion-->
+        <!--#region Salamanders modal controls-->
+        <div class="column">
+            <div class="modWrapper">
+                <div class="image-container">
+                    <img src="../../content/Images/HeresySalamanders/SalamanderLot.jpg" alt="Salamanders 1" class="hover-shadow">
+                    <div onclick="openModal('salModal');currentSlide(1, 'GalSalSlides', 'SalThumb', 'salCaption')" class="image-caption">
+                        <h1>Salamanders</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Apothecaries.jpg" alt="Salamanders 2" onclick="openModal('salModal');currentSlide(2, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Chaplains.jpg" alt="Salamanders 3" onclick="openModal('salModal');currentSlide(3, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Chaplains2.jpg" alt="Salamanders 4" onclick="openModal('salModal');currentSlide(4, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Contemptor.jpg" alt="Salamanders 5" onclick="openModal('salModal');currentSlide(5, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Contemptor2.jpg" alt="Salamanders 6" onclick="openModal('salModal');currentSlide(6, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Firedrakes.jpg" alt="Salamanders 7" onclick="openModal('salModal');currentSlide(7, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/HeavyFlamers.jpg" alt="Salamanders 8" onclick="openModal('salModal');currentSlide(8, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/HeavyFlamers2.jpg" alt="Salamanders 9" onclick="openModal('salModal');currentSlide(9, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/HQ.jpg" alt="Salamanders 10" onclick="openModal('salModal');currentSlide(10, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Praetors.jpg" alt="Salamanders 11" onclick="openModal('salModal');currentSlide(11, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/Sergeants.jpg" alt="Salamanders 12" onclick="openModal('salModal');currentSlide(12, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/TacticalSquad.jpg" alt="Salamanders 13" onclick="openModal('salModal');currentSlide(13, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/TacticalSquad2.jpg" alt="Salamanders 14" onclick="openModal('salModal');currentSlide(14, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+        <div class="column colHidden">
+            <img src="../../content/Images/HeresySalamanders/TacticalSquad3.jpg" alt="Salamanders 15" onclick="openModal('salModal');currentSlide(15, 'GalSalSlides', 'SalThumb', 'salCaption')" class="hover-shadow">
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Start admech lightbox-->
+    <div id="adMechModal" class="modal">
+        <span class="close cursor" onclick="closeModal('adMechModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalAdmechSlides">
+                <div class="numbertext">1 / 13</div>
+                <img src="../../content/Images/AdMech/Dragoon.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">2 / 13</div>
+                <img src="../../content/Images/AdMech/AdMechLot1.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">3 / 13</div>
+                <img src="../../content/Images/AdMech/ElectroPriests.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">4 / 13</div>
+                <img src="../../content/Images/AdMech/Infiltrators.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">5 / 13</div>
+                <img src="../../content/Images/AdMech/Kastellan.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">6 / 13</div>
+                <img src="../../content/Images/AdMech/Kataphron1.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">7 / 13</div>
+                <img src="../../content/Images/AdMech/Kataphron2.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">8 / 13</div>
+                <img src="../../content/Images/AdMech/MagosNDatasmith.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">9 / 13</div>
+                <img src="../../content/Images/AdMech/Onager.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">10 / 13</div>
+                <img src="../../content/Images/AdMech/Onager2.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">11 / 13</div>
+                <img src="../../content/Images/AdMech/Ruststalkers.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">12 / 13</div>
+                <img src="../../content/Images/AdMech/SkitariiRangers.jpg" style="width:100%">
+            </div>
+            <div class="GalAdmechSlides">
+                <div class="numbertext">13 / 13</div>
+                <img src="../../content/Images/AdMech/SkitariiVanguard.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="adMechCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Dragoon.jpg" onclick="currentSlide(1, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Dragoon">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/AdMechLot1.jpg" onclick="currentSlide(2, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="AM Lot 1">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/ElectroPriests.jpg" onclick="currentSlide(3, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Electro Priests">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Infiltrators.jpg" onclick="currentSlide(4, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Infiltrators">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Kastellan.jpg" onclick="currentSlide(5, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Kastellan">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Kataphron1.jpg" onclick="currentSlide(6, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Kataphron1">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Kataphron2.jpg" onclick="currentSlide(7, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Kataphron2">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/MagosNDatasmith.jpg" onclick="currentSlide(8, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Magos Datasmith">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Onager.jpg" onclick="currentSlide(9, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Onager">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Onager2.jpg" onclick="currentSlide(10, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Onager2">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/Ruststalkers.jpg" onclick="currentSlide(11, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Ruststalkers">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/SkitariiRangers.jpg" onclick="currentSlide(12, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Rangers">
+                </div>
+                <div class="column">
+                    <img class="AdMechThumb" src="../../content/Images/AdMech/SkitariiVanguard.jpg" onclick="currentSlide(13, 'GalAdmechSlides', 'AdMechThumb', 'adMechCaption')" alt="Vanguard">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region KDM lightbox-->
+    <div id="KDMModal" class="modal">
+        <span class="close cursor" onclick="closeModal('KDMModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalKDMSlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="../../content/Images/KingdomDeath/Gorm.jpg" style="width:100%">
+            </div>
+            <div class="GalKDMSlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="../../content/Images/KingdomDeath/Manhunter.jpg" style="width:100%">
+            </div>
+            <div class="GalKDMSlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../content/Images/KingdomDeath/WhiteLion_1.jpg" style="width:100%">
+            </div>
+            <div class="GalKDMSlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../../content/Images/KingdomDeath/WhiteLion_2.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="KDMCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="KDMThumb" src="../../content/Images/KingdomDeath/Gorm.jpg" onclick="currentSlide(1, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" alt="Gorm">
+                </div>
+                <div class="column">
+                    <img class="KDMThumb" src="../../content/Images/KingdomDeath/Manhunter.jpg" onclick="currentSlide(2, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" alt="Manhunter">
+                </div>
+                <div class="column">
+                    <img class="KDMThumb" src="../../content/Images/KingdomDeath/WhiteLion_1.jpg" onclick="currentSlide(3, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" alt="White Lion">
+                </div>
+                <div class="column">
+                    <img class="KDMThumb" src="../../content/Images/KingdomDeath/WhiteLion_2.jpg" onclick="currentSlide(4, 'GalKDMSlides', 'KDMThumb', 'KDMCaption')" alt="White Lion 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Knight lightbox-->
+    <div id="KnightModal" class="modal">
+        <span class="close cursor" onclick="closeModal('KnightModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalKnightSlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade1.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade2.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade3.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade4.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade5.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade6.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="../../content/Images/Knights/Freeblade7.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="../../content/Images/Knights/Taranis1.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="../../content/Images/Knights/Taranis2.jpg" style="width:100%">
+            </div>
+            <div class="GalKnightSlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="../../content/Images/Knights/Taranis3.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="KnightCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade1.jpg" onclick="currentSlide(1, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 1">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade2.jpg" onclick="currentSlide(2, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 2">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade3.jpg" onclick="currentSlide(3, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 3">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade4.jpg" onclick="currentSlide(4, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 4">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade5.jpg" onclick="currentSlide(5, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 5">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade6.jpg" onclick="currentSlide(6, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 6">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Freeblade7.jpg" onclick="currentSlide(7, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Freeblade 7">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Taranis1.jpg" onclick="currentSlide(8, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Taranis 1">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Taranis2.jpg" onclick="currentSlide(9, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Taranis 2">
+                </div>
+                <div class="column">
+                    <img class="KnightThumb" src="../../content/Images/Knights/Taranis3.jpg" onclick="currentSlide(10, 'GalKnightSlides', 'KnightThumb', 'KnightCaption')" alt="Taranis 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Space Marines lightbox-->
+    <div id="SMModal" class="modal">
+        <span class="close cursor" onclick="closeModal('SMModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalSMSlides">
+                <div class="numbertext">1 / 15</div>
+                <img src="../../content/Images/SpaceMarines/SMLot1.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">2 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Captain.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">3 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Captains.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">4 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Captains2.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">5 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Centurions.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">6 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Centurions2.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">7 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Dreadnoughts.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">8 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Ramirez.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">9 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Ramirez2.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">10 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Ramirez3.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">11 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Sergeants.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">12 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Techs.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">13 / 15</div>
+                <img src="../../content/Images/SpaceMarines/Terminators.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">14 / 15</div>
+                <img src="../../content/Images/SpaceMarines/TerminatorSgts.jpg" style="width:100%">
+            </div>
+            <div class="GalSMSlides">
+                <div class="numbertext">15 / 15</div>
+                <img src="../../content/Images/SpaceMarines/VanguardSgt.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalSMSlides', 'SMThumb', 'SMCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalSMSlides', 'SMThumb', 'SMCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="SMCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/SMLot1.jpg" onclick="currentSlide(1, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Space Marines">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Captain.jpg" onclick="currentSlide(2, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Captain">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Captains.jpg" onclick="currentSlide(3, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Captains">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Captains2.jpg" onclick="currentSlide(4, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Captains">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Centurions.jpg" onclick="currentSlide(5, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Centurions">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Centurions2.jpg" onclick="currentSlide(6, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Centurions">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Dreadnoughts.jpg" onclick="currentSlide(7, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Dreadnoughts">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Ramirez.jpg" onclick="currentSlide(8, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Sgt Ramirez">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Ramirez2.jpg" onclick="currentSlide(9, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Sgt Ramirez">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Ramirez3.jpg" onclick="currentSlide(10, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Sgt Ramirez">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Sergeants.jpg" onclick="currentSlide(11, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Sergeants">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Techs.jpg" onclick="currentSlide(12, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Techs">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/Terminators.jpg" onclick="currentSlide(13, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Terminators">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/TerminatorSgts.jpg" onclick="currentSlide(14, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Terminator Sergeants">
+                </div>
+                <div class="column">
+                    <img class="SMThumb" src="../../content/Images/SpaceMarines/VanguardSgt.jpg" onclick="currentSlide(15, 'GalSMSlides', 'SMThumb', 'SMCaption')" alt="Vanguard Sgt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region X-Wing lightbox-->
+    <div id="XWModal" class="modal">
+        <span class="close cursor" onclick="closeModal('XWModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalXWSlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="../../content/Images/XWing/xw1.jpg" style="width:100%">
+            </div>
+            <div class="GalXWSlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="../../content/Images/XWing/xw2.jpg" style="width:100%">
+            </div>
+            <div class="GalXWSlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="../../content/Images/XWing/xw3.jpg" style="width:100%">
+            </div>
+            <div class="GalXWSlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="../../content/Images/XWing/xw4.jpg" style="width:100%">
+            </div>
+            <div class="GalXWSlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="../../content/Images/XWing/xw5.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalXWSlides', 'XWThumb', 'XWCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalXWSlides', 'XWThumb', 'XWCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="XWCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="XWThumb" src="../../content/Images/XWing/xw1.jpg" onclick="currentSlide(1, 'GalXWSlides', 'XWThumb', 'XWCaption')" alt="Slave One">
+                </div>
+                <div class="column">
+                    <img class="XWThumb" src="../../content/Images/XWing/xw2.jpg" onclick="currentSlide(2, 'GalXWSlides', 'XWThumb', 'XWCaption')" alt="X-Wings">
+                </div>
+                <div class="column">
+                    <img class="XWThumb" src="../../content/Images/XWing/xw3.jpg" onclick="currentSlide(3, 'GalXWSlides', 'XWThumb', 'XWCaption')" alt="X-Wings">
+                </div>
+                <div class="column">
+                    <img class="XWThumb" src="../../content/Images/XWing/xw4.jpg" onclick="currentSlide(4, 'GalXWSlides', 'XWThumb', 'XWCaption')" alt="X-Wings">
+                </div>
+                <div class="column">
+                    <img class="XWThumb" src="../../content/Images/XWing/xw5.jpg" onclick="currentSlide(5, 'GalXWSlides', 'XWThumb', 'XWCaption')" alt="X-Wings">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Dark Souls lightbox-->
+    <div id="darkSoulsModal" class="modal">
+        <span class="close cursor" onclick="closeModal('darkSoulsModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalDSSlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="../../content/Images/DarkSouls/ds1.jpg" style="width:100%">
+            </div>
+            <div class="GalDSSlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="../../content/Images/DarkSouls/ds2.jpg" style="width:100%">
+            </div>
+            <div class="GalDSSlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../content/Images/DarkSouls/ds3.jpg" style="width:100%">
+            </div>
+            <div class="GalDSSlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../../content/Images/DarkSouls/ds4.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="darkSoulsCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="DarkSoulsThumb" src="../../content/Images/DarkSouls/ds1.jpg" onclick="currentSlide(1, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" alt="Dark Souls 1">
+                </div>
+                <div class="column">
+                    <img class="DarkSoulsThumb" src="../../content/Images/DarkSouls/ds2.jpg" onclick="currentSlide(2, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" alt="Dark Souls 2">
+                </div>
+                <div class="column">
+                    <img class="DarkSoulsThumb" src="../../content/Images/DarkSouls/ds3.jpg" onclick="currentSlide(3, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" alt="Dark Souls 3">
+                </div>
+                <div class="column">
+                    <img class="DarkSoulsThumb" src="../../content/Images/DarkSouls/ds4.jpg" onclick="currentSlide(4, 'GalDSSlides', 'DarkSoulsThumb', 'darkSoulsCaption')" alt="Dark Souls 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Alpha Legion lightbox-->
+    <div id="ALModal" class="modal">
+        <span class="close cursor" onclick="closeModal('ALModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalALSlides">
+                <div class="numbertext">1 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/ALLot1.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">2 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/ALLot2.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">3 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Apothecary.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">4 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Apothecary2.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">5 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Apothecary3.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">6 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Cataphractii.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">7 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Contemptor.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">8 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Fellblade.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">9 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Fellblade2.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">10 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/HeavySupport.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">11 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/LaserDestroyer.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">12 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Lieutenant.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">13 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Praetors.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">14 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Sergeant.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">15 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/SupportSquad.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">16 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/SupportSquad2.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">17 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/Tacticals.jpg" style="width:100%">
+            </div>
+            <div class="GalALSlides">
+                <div class="numbertext">18 / 18</div>
+                <img src="../../content/Images/HeresyAlphaLegion/TacticalSquad.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalALSlides', 'ALThumb', 'ALCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalALSlides', 'ALThumb', 'ALCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="ALCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/ALLot1.jpg" onclick="currentSlide(1, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Alpha Legion Lot">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/ALLot2.jpg" onclick="currentSlide(2, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Alpha Legion Lot 2">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Apothecary.jpg" onclick="currentSlide(3, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Apothecary">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Apothecary2.jpg" onclick="currentSlide(4, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Apothecary">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Apothecary3.jpg" onclick="currentSlide(5, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Apothecary">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Cataphractii.jpg" onclick="currentSlide(6, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Cataphractii">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Contemptor.jpg" onclick="currentSlide(7, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Contemptor">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Fellblade.jpg" onclick="currentSlide(8, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Fellblade">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Fellblade2.jpg" onclick="currentSlide(9, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Fellblade">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/HeavySupport.jpg" onclick="currentSlide(10, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Heavy Support">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/LaserDestroyer.jpg" onclick="currentSlide(11, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Laser Destroyer">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Lieutenant.jpg" onclick="currentSlide(12, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Lieutenant">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Praetors.jpg" onclick="currentSlide(13, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Praetors">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Sergeant.jpg" onclick="currentSlide(14, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Sergeant">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/SupportSquad.jpg" onclick="currentSlide(15, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Support Squad">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/SupportSquad2.jpg" onclick="currentSlide(16, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Support Squad">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/Tacticals.jpg" onclick="currentSlide(17, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Tactical Squad">
+                </div>
+                <div class="column">
+                    <img class="ALThumb" src="../../content/Images/HeresyAlphaLegion/TacticalSquad.jpg" onclick="currentSlide(18, 'GalALSlides', 'ALThumb', 'ALCaption')" alt="Tactical Squad">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region Salamanders lightbox-->
+    <div id="salModal" class="modal">
+        <span class="close cursor" onclick="closeModal('salModal')">&times;</span>
+        <div class="modal-content">
+            <div class="GalSalSlides">
+                <div class="numbertext">1 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/SalamanderLot.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">2 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Apothecaries.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">3 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Chaplains.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">4 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Chaplains2.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">5 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Contemptor.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">6 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Contemptor2.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">7 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Firedrakes.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">8 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/HeavyFlamers.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">9 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/HeavyFlamers2.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">10 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/HQ.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">11 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Praetors.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">12 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/Sergeants.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">13 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/TacticalSquad.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">14 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/TacticalSquad2.jpg" style="width:100%">
+            </div>
+            <div class="GalSalSlides">
+                <div class="numbertext">15 / 15</div>
+                <img src="../../content/Images/HeresySalamanders/TacticalSquad3.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 'GalSalSlides', 'SalThumb', 'salCaption')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'GalSalSlides', 'SalThumb', 'salCaption')">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="salCaption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row galThumbRow">
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/SalamanderLot.jpg" onclick="currentSlide(1, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Salamanders">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Apothecaries.jpg" onclick="currentSlide(2, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Apothecaries">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Chaplains.jpg" onclick="currentSlide(3, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Chaplains">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Chaplains2.jpg" onclick="currentSlide(4, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Chaplains">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Contemptor.jpg" onclick="currentSlide(5, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Contemptor Dreadnought">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Contemptor2.jpg" onclick="currentSlide(6, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Contemptor Dreadnought">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Firedrakes.jpg" onclick="currentSlide(7, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Firedrakes">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/HeavyFlamers.jpg" onclick="currentSlide(8, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Flamers">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/HeavyFlamers2.jpg" onclick="currentSlide(9, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Flamers">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/HQ.jpg" onclick="currentSlide(10, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="HQ">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Praetors.jpg" onclick="currentSlide(11, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Praetors">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/Sergeants.jpg" onclick="currentSlide(12, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Sergeants">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/TacticalSquad.jpg" onclick="currentSlide(13, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Salamanders Tac Squad">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/TacticalSquad2.jpg" onclick="currentSlide(14, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Salamanders Tac Squad">
+                </div>
+                <div class="column">
+                    <img class="SalThumb" src="../../content/Images/HeresySalamanders/TacticalSquad3.jpg" onclick="currentSlide(15, 'GalSalSlides', 'SalThumb', 'salCaption')" alt="Salamanders Tac Squad">
+                </div>
+            </div>
+        </div>
+        <!--#endregion-->
     </div>
     <!--End row-->
-    <div class="container" id="galDivFin"></div>
 </div>
 <!--End container-->

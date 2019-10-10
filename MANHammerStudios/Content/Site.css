@@ -258,34 +258,6 @@ UL.nav > LI:hover UL {
     font-size:.9em;
 }
 
-.smCarousel {
-    max-height: 700px;
-}
-
-#smCarousel0 {
-    max-height: 700px;
-}
-
-#smCarousela {
-    max-height: 700px;
-}
-
-#smCarouselb {
-    max-height: 700px;
-}
-
-#smCarouselc {
-    max-height: 700px;
-}
-
-#smCarouseld {
-    max-height: 700px;
-}
-
-#smCarousele {
-    max-height: 700px;
-}
-
 #xwingTestimonial{
     font-size:1.1em;
 }
@@ -308,7 +280,7 @@ UL.nav > LI:hover UL {
 }
 /*#endregion carouselStyles*/
 /*#region columnStyles*/
-#column{
+.column{
     padding-right:20px;
 }
 #contactCol {
@@ -334,6 +306,10 @@ UL.nav > LI:hover UL {
 /*#region contactStyles*/
 #name, #email, #message, #submit, #subject {
     color: black;
+}
+
+.colHidden{
+    display:none;
 }
 
 * {
@@ -722,33 +698,7 @@ ul {
         color: white;
     }
 
-    .smCarousel {
-        max-width: 90%;
-    }
-
-    #smCarousel0 {
-        max-width: 90%;
-    }
-
-    #smCarousela {
-        max-width: 90%;
-    }
-
-    #smCarouselb {
-        max-width: 90%;
-    }
-
-    #smCarouselc {
-        max-width: 90%;
-    }
-
-    #smCarouseld {
-        max-width: 90%;
-    }
-
-    #smCarousele {
-        max-width: 90%;
-    }
+ 
     ul {
         display: inline-block;
         padding: 0;
@@ -814,33 +764,7 @@ ul {
         color: white;
     }
 
-    .smCarousel { 
-        max-width: 85%;
-    }
-
-    #smCarousel0 {
-        max-width: 85%;
-    }
-
-    #smCarousela {
-        max-width: 85%;
-    }
-
-    #smCarouselb {
-        max-width: 85%;
-    }
-
-    #smCarouselc {
-        max-width: 85%;
-    }
-
-    #smCarouseld {
-        max-width: 85%;
-    }
-
-    #smCarousele {
-        max-width: 85%;
-    }
+    
 }
 
 /*Small devices w/landscape orientation*/
@@ -896,34 +820,6 @@ ul {
         margin-left: 5%;
         color: white;
     }
-
-    .smCarousel {
-        max-width: 85%;
-    }
-
-    #smCarousel0 {
-        max-width: 85%;
-    }
-
-    #smCarousela {
-        max-width: 85%;
-    }
-
-    #smCarouselb {
-        max-width: 85%;
-    }
-
-    #smCarouselc {
-        max-width: 85%;
-    }
-
-    #smCarouseld {
-        max-width: 85%;
-    }
-
-    #smCarousele {
-        max-width: 85%;
-    }
 }
 
 /*Medium devices (desktops, 992px and up) */
@@ -971,40 +867,7 @@ ul {
         padding-bottom: 60px;
     }
 
-    .smCarousel {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarousel0 {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarousela {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarouselb {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarouselc {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarouseld {
-        max-width: 75%;
-        width: inherit;
-    }
-
-    #smCarousele {
-        max-width: 75%;
-        width: inherit;
-    }
+ 
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -1067,41 +930,6 @@ ul {
         color: white;
         padding-top: 15px;
         padding-bottom: 60px;
-    }
-
-    .smCarousel {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarousel0 {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarousela {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarouselb {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarouselc {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarouseld {
-        max-width: 80%;
-        width: inherit;
-    }
-
-    #smCarousele {
-        max-width: 80%;
-        width: inherit;
     }
 }
 /*#endregion mediaQueries*/
