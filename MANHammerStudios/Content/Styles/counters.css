@@ -36,12 +36,17 @@
     position: relative;
     display: inline;
     display: inline-block;
-    margin-bottom:130px;
+    margin-bottom:70px;
     font-family: Arial;
     padding: 25px;
     background-image: linear-gradient(darkslateblue, black);
     color: darkseagreen;
     text-align: center;
+}
+
+.row{
+    margin:0;
+    padding:0;
 }
 
 .end {
@@ -51,14 +56,14 @@
 
 .wrapper {
     width: 980px;
-    margin: 30px auto;
+    margin: 15px auto;
     padding-left:100px;
     position: relative;
 }
 
 .counter {
     background-image: linear-gradient(darkslateblue, black);
-    padding: 20px 0;
+    padding: 10px 0;
     border-radius: 5px;
 }
 

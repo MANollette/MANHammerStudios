@@ -54,15 +54,17 @@ table {
 }
 
 .bg {
-  background-image: url("../images/Taranisbg.jpg");
-  height: 100%;
-  background-position: center;
-  background-color:black;
-
+    background-image: url("../images/Taranisbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    height: 100%;
+    background-position: center;
+    background-color: black;
 }
 
 /*#endregion resetCSS*/
-
+/*#region art/carousel*/
 #artBanner{
     max-height:100px;
 }
@@ -81,7 +83,7 @@ table {
     width: 98%;
     left:0;
 }
-
+/*#endregion*/
 /*#region modalControls*/
 .mh-modal {
     z-index: 3;

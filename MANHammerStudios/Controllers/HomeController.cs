@@ -27,6 +27,20 @@ namespace MANHammerStudios.Controllers
             return View();
         }
 
+        public ActionResult Developer()
+        {
+            ViewBag.Message = "Developer Introduction Page";
+
+            return View();
+        }
+
+        public ActionResult Test()
+        {
+            ViewBag.Message = "Test Page";
+
+            return View();
+        }
+
         public ActionResult Gallery()
         {
             ViewBag.Message = "Gallery page.";

@@ -50,6 +50,9 @@ table {
 
 .bg {
     background-image: url("../images/Taranisbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     height: 100%;
     background-position: center;
     background-color: black;
@@ -272,6 +275,7 @@ UL.nav > LI:hover UL {
     left: 0;
     right: 0;
     margin: auto;
+    opacity: 0.6;
 }
 
 #testCarouselRight {
@@ -659,6 +663,11 @@ ul {
         padding-top: 10px;
     }
 
+    .testHead{
+        font-size:1.15em;
+        font-weight:bold;
+    }
+
     #admechTestimonial {
         font-size: .8em;
     }
@@ -942,6 +951,7 @@ ul {
 .aboutP {
     padding-bottom: 10px;
     font-size: 1.2em;
+    font-family: 'Times New Roman';
     padding-top: 10px;
     background: rgba(0,0,0,.6);
     color: white;
