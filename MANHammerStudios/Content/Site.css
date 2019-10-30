@@ -68,12 +68,15 @@ table {
 /*#region backgroundStyles*/
 .webmadewell {
     background-color: white;
+    
 }
 /*#endregion backgroundStyles*/
 /*#region buttonNavStyles*/
 .desktopMenu {
     display: block;
 }
+
+
 
 .mobileMenu {
     display: none;
@@ -180,39 +183,6 @@ UL.nav > LI:hover UL {
 .header-right {
     width: 70%;
     text-align: right;
-}
-
-.sample-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-    .sample-header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: MidnightBlue;
-        opacity: 0.3;
-    }
-
-.sample-header-section {
-    position: relative;
-    padding: 15% 0 10%;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Montserrat", sans-serif;
 }
 
 .aboutHead {
@@ -598,11 +568,6 @@ ul {
     height: 40%;
 }
 
-#profilePicture {
-    border-radius: 8px;
-    border: 1px solid #000000;
-    max-width: 500px;
-}
 /*#endregion imageStyles*/
 /*#region mediaQueries*/
 
@@ -613,6 +578,10 @@ ul {
         background-color: black;
         color: white;
         padding: 0 .5em;
+    }
+
+    #contactContainer {
+        width: 80%;
     }
 
     h1 {
@@ -669,11 +638,11 @@ ul {
     }
 
     #admechTestimonial {
-        font-size: .8em;
+        font-size: .7em;
     }
 
     #xwingTestimonial {
-        font-size: 1em;
+        font-size: .8em;
     }
 
     #contactLabel {
@@ -726,7 +695,7 @@ ul {
 @media screen and (min-width: 768px) and (orientation:portrait) {
     body {
         background-image: none;
-        background-color: lightgray;
+        background-color: black;
         color: black;
     }
 
@@ -780,7 +749,7 @@ ul {
 @media screen and (min-width: 768px) and (orientation:landscape) {
     body {
         background-image: none;
-        background-color: lightgray;
+        background-color: black;
         color: black;
     }
 
@@ -941,77 +910,77 @@ ul {
         padding-bottom: 60px;
     }
 }
-/*#endregion mediaQueries*/
-/*#region spaceDivStyles*/
-#contactEndDiv {
-    min-height: 200px;
-}
-/*#endregion spaceDivStyles*/
-/*#region textStyles*/
-.aboutP {
-    padding-bottom: 10px;
-    font-size: 1.2em;
-    font-family: 'Times New Roman';
-    padding-top: 10px;
-    background: rgba(0,0,0,.6);
-    color: white;
-}
+    /*#endregion mediaQueries*/
+    /*#region spaceDivStyles*/
+    #contactEndDiv {
+        min-height: 200px;
+    }
+    /*#endregion spaceDivStyles*/
+    /*#region textStyles*/
+    .aboutP {
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        font-family: 'Times New Roman';
+        padding-top: 10px;
+        background: rgba(0,0,0,.6);
+        color: white;
+    }
 
-.aboutPa {
-    font-size: 1.5em;
-    margin-top: 80px;
-    width: 80%;
-    color: white;
-    background: rgba(0,0,0,.6);
-}
+    .aboutPa {
+        font-size: 1.5em;
+        margin-top: 80px;
+        width: 80%;
+        color: white;
+        background: rgba(0,0,0,.6);
+    }
 
-.aboutPF {
-    padding-bottom: 150px;
-    font-size: 1.2em;
-    padding-top: 10px;
-    background: rgba(0,0,0,.6);
-    color: white;
-}
+    .aboutPF {
+        padding-bottom: 150px;
+        font-size: 1.2em;
+        padding-top: 10px;
+        background: rgba(0,0,0,.6);
+        color: white;
+    }
 
-.aboutUs {
-    padding-right: 10px;
-}
+    .aboutUs {
+        padding-right: 10px;
+    }
 
-#contactLabel {
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 80px;
-}
+    #contactLabel {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 80px;
+    }
 
-#contactLabela {
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 80px;
-}
+    #contactLabela {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 80px;
+    }
 
-#message {
-    height: 400px;
-    width: 50%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    color: black;
-}
+    #message {
+        height: 400px;
+        width: 50%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: black;
+    }
 
-#reviewP {
-    font-size: 1.4em;
-}
+    #reviewP {
+        font-size: 1.4em;
+    }
 
-#subject {
-    color: black;
-}
+    #subject {
+        color: black;
+    }
 
-#submit {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-/*#endregion textStyles*/
+    #submit {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    /*#endregion textStyles*/
 
 
 
